@@ -29,6 +29,13 @@
       "when": 1775001602000,
       "tag": "0003_policy_cleanup",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1776712894876,
+      "tag": "0004_mighty_omega_flight",
+      "breakpoints": true
     }
   ]
 }
