@@ -1,6 +1,9 @@
 // Users
 export {
   users,
+  sessions,
+  accounts,
+  verifications,
   selectUserSchema,
   insertUserSchema,
   updateUserSchema,
