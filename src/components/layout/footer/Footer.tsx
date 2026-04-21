@@ -24,6 +24,10 @@ export const Footer = () => {
               <Link href="/sweatshirts" className={linkStyles}>
                 Sweatshirts
               </Link>
+            </li> <li className={liStyles}>
+              <Link href="/shoes" className={linkStyles}>
+                Shoes
+              </Link>
             </li>
           </ul>
         </div>
@@ -48,11 +52,11 @@ export const Footer = () => {
           </ul>
         </div>
         <div className="w-full max-w-xs">
-          <h2 className="my-3 text-sm font-medium">About Marcos</h2>
+          <h2 className="my-3 text-sm font-medium">About Ibrahim</h2>
           <ul className="grid grid-cols-2">
             <li className={liStyles}>
               <Link
-                href="https://marcoscamara.com"
+                href="https://ibrahimhassenportfolio.vercel.app"
                 target="_blank"
                 className={linkStyles}
               >
@@ -61,7 +65,7 @@ export const Footer = () => {
             </li>
             <li className={liStyles}>
               <Link
-                href="https://www.linkedin.com/in/marcospenelascamara/"
+                href="https://www.linkedin.com/in/ibrahim-hassen"
                 target="_blank"
                 className={linkStyles}
               >
@@ -70,22 +74,14 @@ export const Footer = () => {
             </li>
             <li className={liStyles}>
               <Link
-                href="https://github.com/MarcosCamara01"
+                href="https://github.com/amuif"
                 target="_blank"
                 className={linkStyles}
               >
                 GitHub
               </Link>
             </li>
-            <li className={liStyles}>
-              <Link
-                href="https://medium.com/@marcoscamara"
-                target="_blank"
-                className={linkStyles}
-              >
-                Medium
-              </Link>
-            </li>
+
           </ul>
         </div>
       </nav>
