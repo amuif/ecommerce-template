@@ -43,7 +43,7 @@ export const ProductImage = ({
         className="relative w-full overflow-hidden"
         style={{ aspectRatio: `${width} / ${height}` }}
       >
-        <ViewTransition name={id} share='morph'>
+        <ViewTransition name={id?.toString()} share='morph'>
           <Image
             fill
             src={image}
