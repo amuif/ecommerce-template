@@ -173,7 +173,7 @@ export const BasicInfo = forwardRef<BasicInfoRef, BasicInfoProps>(
               >
                 <SelectValue placeholder="Select a category" />
               </SelectTrigger>
-              <SelectContent>
+              <SelectContent className="bg-background-secondary">
                 {PRODUCT_CATEGORIES.map(({ value, label }) => (
                   <SelectItem key={value} value={value}>
                     {label}
