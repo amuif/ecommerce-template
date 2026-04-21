@@ -52,6 +52,7 @@ const variantFormSchema = z.object({
 type VariantFormInput = z.infer<typeof variantFormSchema>;
 
 function validationErrorResponse(error: z.ZodError, message: string) {
+  console.error("Validation error:", error.issues);
   return NextResponse.json(
     {
       error: message,

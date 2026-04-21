@@ -43,6 +43,13 @@
       "when": 1776716021157,
       "tag": "0005_glorious_nehzno",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1776774497766,
+      "tag": "0006_regular_absorbing_man",
+      "breakpoints": true
     }
   ]
 }

@@ -22,11 +22,12 @@ export const productCategoryEnum = pgEnum("product_category", [
   "t-shirts",
   "pants",
   "sweatshirts",
+  "shoes"
 ]);
 
 export const sizesEnum = pgEnum("sizes", ["XS", "S", "M", "L", "XL", "XXL"]);
 
-export const ProductCategoryZod = z.enum(["t-shirts", "pants", "sweatshirts"]);
+export const ProductCategoryZod = z.enum(["t-shirts", "pants", "sweatshirts","shoes"]);
 export const ProductSizeZod = z.enum(["XS", "S", "M", "L", "XL", "XXL"]);
 
 // Tables

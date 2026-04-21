@@ -18,6 +18,7 @@ const PRODUCT_CATEGORIES: { value: ProductCategory; label: string }[] = [
   { value: "t-shirts", label: "T-Shirts" },
   { value: "pants", label: "Pants" },
   { value: "sweatshirts", label: "Sweatshirts" },
+  { value: "shoes", label: "Shoes" },
 ];
 
 export type BasicInfoRef = {
@@ -105,7 +106,7 @@ export const BasicInfo = forwardRef<BasicInfoRef, BasicInfoProps>(
             className={cn(
               "min-h-[120px] resize-none",
               errors?.description &&
-                "border-red-500 focus-visible:ring-red-500",
+              "border-red-500 focus-visible:ring-red-500",
             )}
           />
           {errors?.description && (
@@ -167,7 +168,7 @@ export const BasicInfo = forwardRef<BasicInfoRef, BasicInfoProps>(
                 className={cn(
                   "h-11",
                   errors?.category &&
-                    "border-red-500 focus-visible:ring-red-500",
+                  "border-red-500 focus-visible:ring-red-500",
                 )}
               >
                 <SelectValue placeholder="Select a category" />
