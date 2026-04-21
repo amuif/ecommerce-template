@@ -20,7 +20,7 @@ export function LinksDesktop() {
         <NavigationMenuItem>
           <NavigationMenuTrigger>Collections</NavigationMenuTrigger>
           <NavigationMenuContent>
-            <ul className="grid gap-3 p-4 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
+            <ul className="grid gap-3 p-4 md:w-[500px] lg:w-[600px] lg:grid-cols-[.75fr_1fr]">
               <li className="row-span-3">
                 <NavigationMenuLink asChild>
                   <Link
@@ -36,20 +36,27 @@ export function LinksDesktop() {
                   </Link>
                 </NavigationMenuLink>
               </li>
-              <ListItem href="/t-shirts" title="T-SHIRTS">
-                Our men&apos;s T-shirts offer timeless style in a range of
-                designs, colors, and textures. From classic to contemporary,
-                find the perfect tee for any occasion.
-              </ListItem>
-              <ListItem href="/pants" title="TROUSERS | PANTS">
-                Explore essential men&apos;s pants for all occasions. From
-                classic chinos to modern joggers, find your perfect fit in a
-                variety of styles and colors.
-              </ListItem>
-              <ListItem href="/sweatshirts" title="SWEATERS | JERSEYS">
-                Much like the T-shirt, men&apos;s sweatshirts are far more than
-                a basic.
-              </ListItem>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <ListItem href="/t-shirts" title="T-SHIRTS">
+                  Our men&apos;s T-shirts offer timeless style in a range of
+                  designs, colors, and textures. From classic to contemporary,
+                  find the perfect tee for any occasion.
+                </ListItem>
+                <ListItem href="/pants" title="TROUSERS | PANTS">
+                  Explore essential men&apos;s pants for all occasions. From
+                  classic chinos to modern joggers, find your perfect fit in a
+                  variety of styles and colors.
+                </ListItem>
+                <ListItem href="/sweatshirts" title="SWEATERS | JERSEYS">
+                  Much like the T-shirt, men&apos;s sweatshirts are far more than
+                  a basic.
+                </ListItem>
+                <ListItem href="/shoes" title="SHOES">
+                  Step up your style with our collection of men&apos;s shoes.
+                  From casual sneakers to formal dress shoes, find the perfect
+                  pair for any occasion.
+                </ListItem>
+              </div>
             </ul>
           </NavigationMenuContent>
         </NavigationMenuItem>

@@ -22,6 +22,7 @@ export const ProductItem = ({ product }: ProductItemProps) => {
     <div className="flex flex-col justify-between border border-solid border-border-primary rounded-md overflow-hidden">
       <Link href={productLink} className={cn("hover:scale-105 transition-all")}>
         <ProductImage
+          id={id}
           image={img}
           name={name}
           width={280}

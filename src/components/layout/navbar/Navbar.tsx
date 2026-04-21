@@ -39,6 +39,7 @@ export const Navbar = () => {
     { path: "/t-shirts", name: "T-SHIRTS" },
     { path: "/pants", name: "PANTS" },
     { path: "/sweatshirts", name: "SWEATSHIRTS" },
+    { path: "/shoes", name: "SHOES" },
   ];
 
   return (
@@ -61,7 +62,7 @@ export const Navbar = () => {
 
               {/* Navigation Links */}
               <nav className="flex-1 overflow-y-auto">
-                <ul className="flex flex-col gap-2 p-4">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-2 p-4">
                   {/* Category Links */}
                   {linksData.map((link, index) => (
                     <li key={index}>

@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { Suspense, ViewTransition } from 'react'
 /** TYPES */
 import type { Product, ProductVariant } from "@/lib/db/drizzle/schema";
-import {ProductsSkeleton} from "@/components/products";
+import { ProductsSkeleton } from "@/components/products";
 interface ProductImageProps {
   image: ProductVariant["images"][number];
   name: Product["name"];
@@ -17,6 +17,7 @@ interface ProductImageProps {
   unoptimized?: boolean;
   blurDataURL?: string | null;
   className?: string;
+  id?: number
 }
 
 export const ProductImage = ({
@@ -30,18 +31,19 @@ export const ProductImage = ({
   unoptimized,
   blurDataURL,
   className,
+  id
 }: ProductImageProps) => {
   return (
     <Suspense fallback={
       <ViewTransition exit="slide-down">
-        <ProductsSkeleton  items={1}/>
+        <ProductsSkeleton items={1} />
       </ViewTransition>
     }>
       <div
         className="relative w-full overflow-hidden"
         style={{ aspectRatio: `${width} / ${height}` }}
       >
-        <ViewTransition name={name} share='morph'>
+        <ViewTransition name={id} share='morph'>
           <Image
             fill
             src={image}
