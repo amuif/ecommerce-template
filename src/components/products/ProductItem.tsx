@@ -16,7 +16,7 @@ interface ProductItemProps {
 export const ProductItem = ({ product }: ProductItemProps) => {
   const { name, id, img, price, category, variants } = product;
 
-  const productLink = `/${category}/${id}?variant=${variants[0].color}`;
+  const productLink = `/${category}/${id}?variant=${variants[0]?.color}`;
 
   return (
     <div className="flex flex-col justify-between border border-solid border-border-primary rounded-md overflow-hidden">

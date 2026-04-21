@@ -39,6 +39,7 @@ export const metadata: Metadata = {
     title: "Ecommerce Template",
     description: defaultDescription,
   },
+  authors: [{ "name": "Ibrahim Hassen", "url": 'http://ibrahimhassenportfolio.vercel.app/' }]
 };
 
 export default async function RootLayout({
@@ -48,7 +49,7 @@ export default async function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={GeistSans.className}>
+      <body className={GeistSans.className} suppressHydrationWarning>
         <Providers>
           <Navbar />
           <main className="pointer-events-auto mx-auto w-full max-w-[1920px]">
